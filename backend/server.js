@@ -7,11 +7,12 @@ import { connectDB} from "./data/database.js"
 import cookieParser from "cookie-parser";
 import cors from "cors";
  
-
-const app = express();
 config({
     path:"./data/config.env",
 });
+
+const app = express();
+
  //isko router se uper rakho bar bar error de rha hai 
 //using a middleware
 app.use(cors({
